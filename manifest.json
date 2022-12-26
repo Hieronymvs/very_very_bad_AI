@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Very Very Bad AI Extension",
+  "description": "This extension replaces the word 'AI' with 'very very bad AI' on web pages.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
